@@ -1,0 +1,20 @@
+{
+  "name": "blockchain-event-listener",
+  "version": "1.0.0",
+  "description": "sample listner on blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hardhat:node": "npx hardhat node",
+    "build": "npx hardhat run --network localhost scripts/deploy.js",
+    "add": "npx hardhat run scripts/add.js --network localhost",
+    "start": "node ./src/watcher.js"
+  },
+  "author": "thainx",
+  "license": "ISC",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "hardhat": "^2.10.1",
+    "web3": "^1.7.5"
+  }
+}
